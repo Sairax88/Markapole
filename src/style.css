@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+:root {
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    font-family: 'Neutral Face', sans-serif;
+}
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:root {
+    --grid-cols: 12;
+    --grid-margin-x: auto;
+    --grid-col-width: 70px;
+    --grid-gutter: 30px;
+    --container-width: calc(var(--grid-cols) * var(--grid-col-width) + (var(--grid-cols) - 1) * var(--grid-gutter));
+
+    --color-green: #437457;
+    --color-white: #FBF9F8;
+    --color-accent: #ABBBA1;
+    --color-main: #314E49;
+    --color-secondary: #797979;
+}
+
+.container,
+.layout-grid {
+    width: var(--container-width);
+    margin-left: var(--grid-margin-x);
+    margin-right: var(--grid-margin-x);
+}
+
+.layout-grid {
+    display: grid;
+    grid-template-columns: repeat(var(--grid-cols), var(--grid-col-width));
+    column-gap: var(--grid-gutter);
+}
+
+.number {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 20px;
+    color: var(--color-secondary);
+
+}
+.title {
+    font-family: 'Neutral Face';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 46px;
+    color: var(--color-secondary);
+}

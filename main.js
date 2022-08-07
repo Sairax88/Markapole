@@ -1,0 +1,7 @@
+import './src/style.css'
+import './src/footer.css'
+import './src/aboutus.css'
+import './src/location.css'
+import './src/main.css'
+import './src/products.css'
+import './src/reviews.css'

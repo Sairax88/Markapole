@@ -1,0 +1,67 @@
+.products {
+    padding-top: 204px;
+    display: relative;
+}
+.products__item {
+    padding-top: 29px;
+    display: grid;
+    /* grid-template-columns: repeat(auto-fill, minmax(440px, 266px));
+    grid-auto-rows: minmax(266px, auto);
+    gap: 40px; */
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 55px;
+    column-gap: 30px;
+    
+}
+
+
+.products__card-name {
+    margin-top: 10px;
+    margin-left: 20px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #797979;
+    margin-bottom: 24px;
+}
+.products__card-price {
+    display: flex;
+    justify-content:space-between;
+    margin: 24px 20px 20px 20px;
+}
+.price {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.08em;
+    color: var(--color-secondary);
+}
+.price__quantity {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.08em;
+    color: #797979;
+}
+.button__basket {
+    width: 118px;
+    height: 40px;
+    left: 607px;
+    top: 2147px;
+    background: var(--color-green);
+    border-radius: 40px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.08em;
+    color: var(--color-white);
+}
